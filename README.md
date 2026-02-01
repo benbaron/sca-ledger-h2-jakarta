@@ -31,3 +31,10 @@ This will:
 ## Notes
 - You must seed Accounts/Funds before PostingService example will work.
 - A later iteration can add a seeding command or Flyway seed migration.
+
+## CLI usage
+Help:
+    mvn -q exec:java -Dexec.args="--help"
+
+Seed minimal dataset:
+    mvn -q exec:java -Dexec.args="seed"
