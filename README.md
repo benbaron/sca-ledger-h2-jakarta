@@ -21,3 +21,13 @@ This will:
 - A PostingService that validates balancing rules and creates Txn + TxnSplit rows
 - Import/export for Chart of Accounts and Funds (CSV/JSON)
 - JavaFX UI (Ledger grid + split editor + “Show Journal” view)
+
+## Added in v2
+- PostingService: validates balancing and posts Txn + TxnSplit (signed amounts)
+- JournalLine DTO + PostingService.journalForTxn(txnId): derives DR/CR for display
+- CoaFundIo: CSV import/export for Funds, CSV import/export for Accounts, JSON export for CoA (minimal)
+- FundBalanceService: “as of” fund balances (simple sum of signed splits; refine later)
+
+## Notes
+- You must seed Accounts/Funds before PostingService example will work.
+- A later iteration can add a seeding command or Flyway seed migration.
