@@ -38,3 +38,7 @@ Help:
 
 Seed minimal dataset:
     mvn -q exec:java -Dexec.args="seed"
+
+## UI prototype (JavaFX)
+Run:
+    mvn -q -Pui javafx:run

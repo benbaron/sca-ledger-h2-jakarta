@@ -233,7 +233,6 @@ public class CoaFundIo
         if (v == null) return "";
         String s = v.replace("\"", "\"\"");
         return "\"" + s + "\"";
-
     }
 
     private static String nz(Object v)
